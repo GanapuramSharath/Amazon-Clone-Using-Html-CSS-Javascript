@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+
+}
+
+.border{
+    margin-top: 20px;
+    border: 1px solid rgb(235, 230, 230);
+    width: 23rem;
+    height: 17.3rem;
+    margin-left: 36rem;
+    border-radius: 9px;
+}
+.button{
+    border: 1px solid black;
+    border-color: #a88734 #9c7e31 #846a29;
+    width: 18.7rem;
+    height: 28px;
+    padding-left: 2px;
+    border-radius: 9px;
+    background:#ffd814;
+}
+.h1{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    font-family: "Amazon Ember", Arial, sans-serif;
+  
+}
+.h2{
+    display: block;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-weight: 700;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    color: #111;
+}
+#input{
+    border: 1px solid #a6a6a6;
+    border-top-color: #949494;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 1px 0 rgba(0, 0, 0, .07) inset;
+    outline: 0;
+    width: 19rem;
+    height: 30px;
+}
+#input:focus{
+  
+    
+    filter: drop-shadow(-1px 0 2px  #1eb8d3b0) 
+            drop-shadow(1px 0 2px  #1eb8d3)
+}
+.h3{
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 18px;
+}
+.need{
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+}
+.link{
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.new{
+    max-width: 3500px;
+    font-size: 13px;
+    color: #767676;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    line-height: 19px;
+    font-family: "Amazon Ember", Arial, sans-serif;
+}
+.new hr{
+    border: non;
+    height: 1px;
+    color: #d4d4d4;
+    width: 130px;
+}
+.bt{
+    font-family: "Amazon Ember", Arial, sans-serif;
+    border: 1px solid #d0cccc;
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 29px;
+}
+.bt:hover{
+    background: #f1f1f1;
+}
+.con{
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+
+}
+.con:focus{
+    filter: drop-shadow(-1px 0 2px  #1eb8d3b0) 
+            drop-shadow(1px 0 2px  #1eb8d3)
+}
+.create{
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 15px;
+
+}
+.create:focus{
+    filter: drop-shadow(-1px 0 2px  #1eb8d3b0) 
+            drop-shadow(1px 0 2px  #1eb8d3)
+}
+.f{
+    width: 100%;
+    background: linear-gradient(to bottom, #f4f4f4,#fff);
+}
+.foot{
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 12px;
+
+}
+.footer{
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 11px;
+
+}
+.new{
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 11px;
+
+}
