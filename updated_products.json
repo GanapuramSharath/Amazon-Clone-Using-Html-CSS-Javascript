@@ -1,0 +1,296 @@
+{
+    "Electronics": [
+        {
+            "id": "elec001",
+            "name": "Wireless Bluetooth Headphones",
+            "description": "Premium wireless headphones with noise cancellation and 30-hour battery life",
+            "price": 129.99,
+            "image": "./images/headphones.jpg",
+            "rating": 4.5
+        },
+        {
+            "id": "elec002",
+            "name": "Smart Watch",
+            "description": "Fitness tracker with heart rate monitor and waterproof design",
+            "price": 89.99,
+            "image": "./images/smartwatch.jpg",
+            "rating": 4.2
+        },
+        {
+            "id": "elec003",
+            "name": "Tablet",
+            "description": "Tablet - high quality and best rated product",
+            "price": 21.25,
+            "image": "./images/tablet.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "elec004",
+            "name": "Smartphones",
+            "description": "Smartphones - high quality and best rated product",
+            "price": 25.0,
+            "image": "./images/smartphones.jpg",
+            "rating": 3.5
+        },
+        {
+            "id": "elec005",
+            "name": "Watches",
+            "description": "Watches - high quality and best rated product",
+            "price": 28.75,
+            "image": "./images/watches.jpg",
+            "rating": 4.0
+        }
+    ],
+    "Home & Kitchen": [
+        {
+            "id": "home001",
+            "name": "Air Fryer",
+            "description": "Digital air fryer with 5.8QT capacity and 7 cooking presets",
+            "price": 79.99,
+            "image": "./images/airfryer.jpg",
+            "rating": 4.7
+        },
+        {
+            "id": "home002",
+            "name": "Cooker",
+            "description": "Cooker - high quality and best rated product",
+            "price": 17.5,
+            "image": "./images/cooker.jpg",
+            "rating": 3.5
+        },
+        {
+            "id": "home003",
+            "name": "Coffee Maker",
+            "description": "Coffee Maker - high quality and best rated product",
+            "price": 21.25,
+            "image": "./images/coffee_maker.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "home004",
+            "name": "Pots",
+            "description": "Pots - high quality and best rated product",
+            "price": 25.0,
+            "image": "./images/pots.jpg",
+            "rating": 3.5
+        },
+        {
+            "id": "home005",
+            "name": "Kettles",
+            "description": "Kettles - high quality and best rated product",
+            "price": 28.75,
+            "image": "./images/kettles.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "home006",
+            "name": "Dining",
+            "description": "Dining - high quality and best rated product",
+            "price": 32.5,
+            "image": "./images/dining.jpg",
+            "rating": 3.5
+        },
+        {
+            "id": "home007",
+            "name": "Health and Beauty",
+            "description": "Health and Beauty - high quality and best rated product",
+            "price": 36.25,
+            "image": "./images/health_and_beauty.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "home008",
+            "name": "Kitchen & Dining",
+            "description": "Kitchen & Dining - high quality and best rated product",
+            "price": 40.0,
+            "image": "./images/kitchen_&_dining.jpg",
+            "rating": 3.5
+        },
+        {
+            "id": "home009",
+            "name": "Home Improvement",
+            "description": "Home Improvement - high quality and best rated product",
+            "price": 43.75,
+            "image": "./images/home_improvement.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "home010",
+            "name": "D\u00e9cor",
+            "description": "D\u00e9cor - high quality and best rated product",
+            "price": 47.5,
+            "image": "./images/d\u00e9cor.jpg",
+            "rating": 3.5
+        },
+        {
+            "id": "home011",
+            "name": "Bedding",
+            "description": "Bedding - high quality and best rated product",
+            "price": 51.25,
+            "image": "./images/bedding.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "home012",
+            "name": "Home Storage",
+            "description": "Home Storage - high quality and best rated product",
+            "price": 55.0,
+            "image": "./images/home_storage.jpg",
+            "rating": 3.5
+        },
+        {
+            "id": "home013",
+            "name": "Cleaning Tools",
+            "description": "Cleaning Tools - high quality and best rated product",
+            "price": 58.75,
+            "image": "./images/cleaning_tools.jpg",
+            "rating": 4.0
+        }
+    ],
+    "Books": [
+        {
+            "id": "book001",
+            "name": "The Psychology of Money",
+            "description": "Timeless lessons on wealth, greed, and happiness by Morgan Housel",
+            "price": 14.99,
+            "image": "./images/psychology_money.jpg",
+            "rating": 4.8
+        }
+    ],
+    "Fashion": [
+        {
+            "id": "fash001",
+            "name": "Jeans",
+            "description": "Jeans - high quality and best rated product",
+            "price": 13.75,
+            "image": "./images/jeans.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "fash002",
+            "name": "Tops",
+            "description": "Tops - high quality and best rated product",
+            "price": 17.5,
+            "image": "./images/tops.jpg",
+            "rating": 3.5
+        },
+        {
+            "id": "fash003",
+            "name": "Dresses",
+            "description": "Dresses - high quality and best rated product",
+            "price": 21.25,
+            "image": "./images/dresses.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "fash004",
+            "name": "Shoes",
+            "description": "Shoes - high quality and best rated product",
+            "price": 25.0,
+            "image": "./images/shoes.jpg",
+            "rating": 3.5
+        }
+    ],
+    "Gaming": [
+        {
+            "id": "game001",
+            "name": "Gaming Chairs",
+            "description": "Gaming Chairs - high quality and best rated product",
+            "price": 13.75,
+            "image": "./images/gaming_chairs.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "game002",
+            "name": "Headsets",
+            "description": "Headsets - high quality and best rated product",
+            "price": 17.5,
+            "image": "./images/headsets.jpg",
+            "rating": 3.5
+        },
+        {
+            "id": "game003",
+            "name": "Keyboards",
+            "description": "Keyboards - high quality and best rated product",
+            "price": 21.25,
+            "image": "./images/keyboards.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "game004",
+            "name": "Computer mice",
+            "description": "Computer mice - high quality and best rated product",
+            "price": 25.0,
+            "image": "./images/computer_mice.jpg",
+            "rating": 3.5
+        }
+    ],
+    "Accessories": [
+        {
+            "id": "acc001",
+            "name": "Backpacks",
+            "description": "Backpacks - high quality and best rated product",
+            "price": 13.75,
+            "image": "./images/backpacks.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "acc002",
+            "name": "Suitcase",
+            "description": "Suitcase - high quality and best rated product",
+            "price": 17.5,
+            "image": "./images/suitcase.jpg",
+            "rating": 3.5
+        },
+        {
+            "id": "acc003",
+            "name": "Accessories",
+            "description": "Accessories - high quality and best rated product",
+            "price": 21.25,
+            "image": "./images/accessories.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "acc004",
+            "name": "Handbags",
+            "description": "Handbags - high quality and best rated product",
+            "price": 25.0,
+            "image": "./images/handbags.jpg",
+            "rating": 3.5
+        }
+    ],
+    "Watches": [
+        {
+            "id": "watch001",
+            "name": "Women\u2019s Watches",
+            "description": "Women\u2019s Watches - high quality and best rated product",
+            "price": 13.75,
+            "image": "./images/womens_watches.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "watch002",
+            "name": "Men\u2019s Watches",
+            "description": "Men\u2019s Watches - high quality and best rated product",
+            "price": 17.5,
+            "image": "./images/mens_watches.jpg",
+            "rating": 3.5
+        },
+        {
+            "id": "watch003",
+            "name": "Girls\u2019 Watches",
+            "description": "Girls\u2019 Watches - high quality and best rated product",
+            "price": 21.25,
+            "image": "./images/girls_watches.jpg",
+            "rating": 4.0
+        },
+        {
+            "id": "watch004",
+            "name": "Boys\u2019 Watches",
+            "description": "Boys\u2019 Watches - high quality and best rated product",
+            "price": 25.0,
+            "image": "./images/boys_watches.jpg",
+            "rating": 3.5
+        }
+    ]
+}

@@ -80,4 +80,123 @@ function changeImageAndText() {
             mainText.innerText = event.target.getAttribute('data-description');
         }
     });
+// Search functionality
+document.getElementById('search-btn').addEventListener('click', async () => {
+    const query = document.getElementById('search-input').value.trim();
     
+    if (!query) {
+        showSearchModal("Please enter a search query");
+        return;
+    }
+
+    try {
+        showLoadingIndicator();
+        
+        const response = await fetch('http://localhost:8000/search', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ query, limit: 10 })
+        });
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        displaySearchResults(data.results);
+        
+    } catch (error) {
+        showSearchModal(`Error: ${error.message}`);
+    } finally {
+        hideLoadingIndicator();
+    }
+});
+
+// Display search results in a modal
+function displaySearchResults(results) {
+    const modal = document.createElement('div');
+    modal.className = 'search-modal';
+    modal.innerHTML = `
+        <div class="search-modal-content">
+            <span class="close-search-modal">&times;</span>
+            <h2>Search Results</h2>
+            <div class="search-results-container">
+                ${results.length ? 
+                    results.map(product => `
+                        <div class="search-result-item">
+                            <img src="${product.image || './images/placeholder.jpg'}" alt="${product.name}">
+                            <div class="search-result-details">
+                                <h3>${product.name}</h3>
+                                ${product.category ? `<p class="category">${product.category}</p>` : ''}
+                                <p class="description">${product.description}</p>
+                                <p class="price">$${product.price?.toFixed(2) || 'N/A'}</p>
+                                <button class="view-product">View Product</button>
+                            </div>
+                        </div>
+                    `).join('') :
+                    '<p>No results found. Try different keywords.</p>'
+                }
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // Close modal functionality
+    modal.querySelector('.close-search-modal').addEventListener('click', () => {
+        document.body.removeChild(modal);
+    });
+    
+    // Click outside to close
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            document.body.removeChild(modal);
+        }
+    });
+}
+
+function showLoadingIndicator() {
+    const loading = document.createElement('div');
+    loading.className = 'loading-indicator';
+    loading.innerHTML = '<div class="spinner"></div><p>Searching...</p>';
+    loading.id = 'search-loading';
+    document.body.appendChild(loading);
+}
+
+function hideLoadingIndicator() {
+    const loading = document.getElementById('search-loading');
+    if (loading) {
+        document.body.removeChild(loading);
+    }
+}
+
+function showSearchModal(message) {
+    const modal = document.createElement('div');
+    modal.className = 'search-modal';
+    modal.innerHTML = `
+        <div class="search-modal-content">
+            <span class="close-search-modal">&times;</span>
+            <p>${message}</p>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    modal.querySelector('.close-search-modal').addEventListener('click', () => {
+        document.body.removeChild(modal);
+    });
+    
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            document.body.removeChild(modal);
+        }
+    });
+}
+
+document.getElementById('search-input').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        document.getElementById('search-btn').click();
+    }
+});

@@ -222,3 +222,122 @@ opacity: 0.8;
   }
   
 }
+/* Search Modal Styles */
+.search-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    z-index: 1000;
+}
+
+.search-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-search-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-results-container {
+    margin-top: 20px;
+}
+
+.search-result-item {
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-result-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.search-result-details {
+    flex: 1;
+}
+
+.search-result-details h3 {
+    margin: 0 0 10px 0;
+    color: #0066c0;
+}
+
+.search-result-details .category {
+    color: #555;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.search-result-details .description {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.search-result-details .price {
+    font-weight: bold;
+    color: #B12704;
+    margin-bottom: 10px;
+}
+
+.view-product {
+    background-color: #FFD814;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.view-product:hover {
+    background-color: #F7CA00;
+}
+
+/* Loading Indicator */
+.loading-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
