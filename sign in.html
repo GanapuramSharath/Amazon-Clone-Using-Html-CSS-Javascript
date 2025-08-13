@@ -50,5 +50,26 @@
     <p class="footer mt-5 ml-2">© 1996-2024, Amazon.com, Inc. or its affiliates</p>
   </footer>
 </div>
+<script>
+document.querySelector("#submitButton").addEventListener("click", async (e) => {
+    e.preventDefault();
+    const email = document.querySelector("#input").value;
+    const password = prompt("Enter your password:");
+
+    const res = await fetch("http://localhost:5000/signin", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password })
+    });
+
+    const data = await res.json();
+    alert(data.message);
+
+    if (res.ok) {
+        window.location.href = "index.html";
+    }
+});
+</script>
+
 </body>
 </html>
